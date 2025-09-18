@@ -74,3 +74,12 @@ banners:
   motd: |
     You shall not pass!. Back to the shadows with you! Gandalffffff noooooooooooo. Unless you are authorized. Then you shall pass.
     EOF
+
+# Syslog
+logging:
+  vrfs:
+    - name: default
+      source_interface: Management0
+      hosts:
+        - name: 10.200.0.108
+        - name: 10.200.1.108
